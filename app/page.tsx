@@ -47,22 +47,22 @@ export default function Home() {
       {/* Navigation */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
+          ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg' 
+          : 'bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 sm:h-20">
-            <div className="flex items-center space-x-2">
-              <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                SS
-              </span>
-              <span className="hidden sm:inline text-xl font-semibold text-gray-900 dark:text-white">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg sm:text-xl">S</span>
+              </div>
+              <span className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
                 Sára Slavíková
               </span>
             </div>
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors shadow-md"
               aria-label="Toggle dark mode"
             >
               {darkMode ? <Sun className="w-5 h-5 text-yellow-500" /> : <Moon className="w-5 h-5 text-gray-700" />}
@@ -72,29 +72,30 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-900/20 dark:to-gray-900">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-5"></div>
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 via-pink-600 to-blue-600 dark:from-purple-900 dark:via-pink-900 dark:to-blue-900">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20"></div>
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 text-center relative z-10">
           <div className="animate-fade-in-up">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 drop-shadow-lg">
               <span className="block">Sára Slavíková</span>
-              <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="block text-white/95">
                 Event & HR Pro
               </span>
             </h1>
-            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
+            <p className="text-lg sm:text-xl lg:text-2xl text-white/90 max-w-3xl mx-auto mb-8 sm:mb-12 px-4 drop-shadow-md">
               Profesionální event management a vzdálená HR podpora pro moderní firmy
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <a
                 href="#services"
-                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-4 bg-white text-purple-600 rounded-full font-semibold hover:bg-white/90 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
               >
                 Zjistit více
               </a>
               <a
                 href="#contact"
-                className="w-full sm:w-auto px-8 py-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-full font-semibold hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-gray-200 dark:border-gray-700"
+                className="w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold hover:bg-white/20 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-white/30"
               >
                 Kontaktovat
               </a>
@@ -102,7 +103,7 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-gray-400 dark:text-gray-600" />
+          <ChevronDown className="w-8 h-8 text-white/70" />
         </div>
       </section>
 
