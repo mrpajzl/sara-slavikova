@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sára Slavíková - Event Management & HR Services
 
-## Getting Started
+Profesionální webová stránka pro event management a vzdálenou HR podporu.
 
-First, run the development server:
+## 🚀 Live URL
+
+**Produkční web:** https://sara-slavikova.vercel.app
+
+## ✨ Funkce
+
+- ✅ **Mobile-first design** - Optimalizováno pro mobilní zařízení
+- 🌓 **Light/Dark mode** - Přepínatelný světlý a tmavý režim
+- 🎨 **Moderní design** - Gradientové pozadí, animace, čistý layout
+- ⚡ **Rychlý výkon** - Staticky generovaný s Next.js
+- 📱 **Responzivní** - Perfektně funguje na všech zařízeních
+
+## 🛠️ Technologie
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+- **Jazyk:** TypeScript
+
+## 📋 Sekce webu
+
+1. **Hero sekce** - Úvodní představení s call-to-action tlačítky
+2. **Služby** - Tři hlavní služby:
+   - Event Management
+   - Vzdálená HR podpora
+   - HR Consulting
+3. **O mně** - Osobní představení a zkušenosti
+4. **Kontakt** - Email, telefon a LinkedIn odkazy
+
+## 🎨 Design
+
+- **Barvy:** Fialovo-růžové gradienty
+- **Fonty:** Inter (default Next.js font)
+- **Animace:** Fade-in efekty, hover transformace
+- **Styl:** Moderní, čistý, profesionální
+
+## 🔧 Lokální vývoj
 
 ```bash
+# Instalace závislostí
+npm install
+
+# Spuštění dev serveru
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build pro produkci
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Web je automaticky deployovaný na Vercel při každém push do `main` branče.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Manuální deployment
+vercel --prod
+```
 
-## Learn More
+## 📝 Poznámky
 
-To learn more about Next.js, take a look at the following resources:
+- Kontaktní údaje (email, telefon) je třeba upravit na skutečné
+- LinkedIn profil je třeba propojit
+- Můžete přidat fotku nebo profil do sekce "O mně"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Struktura projektu
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+sara-slavikova/
+├── app/
+│   ├── page.tsx          # Hlavní stránka
+│   ├── layout.tsx        # Root layout
+│   └── globals.css       # Globální styly
+├── public/               # Statické soubory
+└── package.json          # Závislosti
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vytvořeno s ❤️ pomocí Next.js a Tailwind CSS
